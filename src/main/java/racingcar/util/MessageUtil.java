@@ -1,10 +1,15 @@
 package racingcar.util;
 
-import camp.nextstep.edu.missionutils.Console;
+import static racingcar.constant.MessageConstant.INPUT_MSG;
+import static racingcar.constant.MessageConstant.START_MSG;
 
 public class MessageUtil {
 
-    public static void printMessage(String message) {
-        System.out.println(message);
+    public void printInitMessage() {
+        System.out.println(START_MSG);
+    }
+
+    public void printInputMessage() {
+        System.out.println(INPUT_MSG);
     }
 }
