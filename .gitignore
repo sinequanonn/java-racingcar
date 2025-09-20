@@ -1,0 +1,49 @@
+# ===============================
+# Java build
+# ===============================
+*.class
+*.jar
+*.war
+*.ear
+
+# Maven / Gradle
+target/
+build/
+out/
+*.iml
+
+# ===============================
+# IDE files
+# ===============================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+
+# Eclipse
+.project
+.classpath
+.settings/
+.metadata/
+
+# VS Code
+.vscode/
+
+# ===============================
+# Logs
+# ===============================
+*.log
+
+# ===============================
+# OS files
+# ===============================
+.DS_Store
+Thumbs.db
+
+# ===============================
+# Temporary / Backup files
+# ===============================
+*.swp
+*.swo
+*~
