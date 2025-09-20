@@ -1,49 +1,32 @@
-# ===============================
-# Java build
-# ===============================
-*.class
-*.jar
-*.war
-*.ear
-
-# Maven / Gradle
-target/
+HELP.md
+.gradle
 build/
-out/
-*.iml
+!gradle/wrapper/gradle-wrapper.jar
+!**/src/main/**
+!**/src/test/**
 
-# ===============================
-# IDE files
-# ===============================
-# IntelliJ IDEA
-.idea/
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+.sts4-cache
+
+### IntelliJ IDEA ###
+.idea
 *.iws
 *.iml
 *.ipr
+out/
 
-# Eclipse
-.project
-.classpath
-.settings/
-.metadata/
+### NetBeans ###
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
 
-# VS Code
+### VS Code ###
 .vscode/
-
-# ===============================
-# Logs
-# ===============================
-*.log
-
-# ===============================
-# OS files
-# ===============================
-.DS_Store
-Thumbs.db
-
-# ===============================
-# Temporary / Backup files
-# ===============================
-*.swp
-*.swo
-*~
