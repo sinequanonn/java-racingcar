@@ -2,18 +2,18 @@ package racingcar.entity;
 
 public class Car {
     private String name;
-    private Integer move;
+    private int move;
 
-    public Car(String name, Integer move) {
+    public Car(String name) {
         this.name = name;
-        this.move = move;
+        this.move = 0;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void addMove() {
+        this.move += 1;
     }
 
-    public void setMove(Integer move) {
+    public void setMove(int move) {
         this.move = move;
     }
 
@@ -23,5 +23,10 @@ public class Car {
 
     public Integer getMove() {
         return move;
+    }
+
+    public void printMove() {
+        System.out.print(name + " : ");
+        System.out.println("-".repeat(this.move));
     }
 }
