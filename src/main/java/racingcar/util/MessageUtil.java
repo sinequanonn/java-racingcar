@@ -1,10 +1,19 @@
 package racingcar.util;
 
-import camp.nextstep.edu.missionutils.Console;
+import racingcar.entity.Car;
+
+import java.util.List;
+
+import static racingcar.constant.MessageConstant.*;
 
 public class MessageUtil {
 
-    void MainMessage() {
-        System.out.println("경주할 자동차 이름을 입력하세요.(이름은 쉼표(,) 기준으로 구분)");
+    public static void printInitMessage() {
+        System.out.println(START_MSG);
     }
+
+    public static void printInputMessage() {
+        System.out.println(INPUT_MSG);
+    }
+
 }
