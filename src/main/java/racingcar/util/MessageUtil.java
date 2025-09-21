@@ -1,15 +1,19 @@
 package racingcar.util;
 
-import static racingcar.constant.MessageConstant.INPUT_MSG;
-import static racingcar.constant.MessageConstant.START_MSG;
+import racingcar.entity.Car;
+
+import java.util.List;
+
+import static racingcar.constant.MessageConstant.*;
 
 public class MessageUtil {
 
-    public void printInitMessage() {
+    public static void printInitMessage() {
         System.out.println(START_MSG);
     }
 
-    public void printInputMessage() {
+    public static void printInputMessage() {
         System.out.println(INPUT_MSG);
     }
+
 }
