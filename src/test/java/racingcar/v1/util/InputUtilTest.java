@@ -1,12 +1,10 @@
-package racingcar.util;
+package racingcar.v1.util;
 
 import camp.nextstep.edu.missionutils.Console;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import racingcar.entity.Car;
-import racingcar.validation.InputValidation;
+import racingcar.v1.entity.Car;
 
 import java.io.ByteArrayInputStream;
 import java.util.List;

@@ -1,4 +1,4 @@
-package racingcar.constant;
+package racingcar.v1.constant;
 
 public class MessageConstant {
 

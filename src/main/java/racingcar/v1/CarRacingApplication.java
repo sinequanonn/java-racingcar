@@ -1,9 +1,9 @@
-package racingcar;
+package racingcar.v1;
 
-import racingcar.entity.Car;
-import racingcar.util.CarRaceUtil;
-import racingcar.util.InputUtil;
-import racingcar.util.MessageUtil;
+import racingcar.v1.entity.Car;
+import racingcar.v1.util.CarRaceUtil;
+import racingcar.v1.util.InputUtil;
+import racingcar.v1.util.MessageUtil;
 
 import java.util.List;
 

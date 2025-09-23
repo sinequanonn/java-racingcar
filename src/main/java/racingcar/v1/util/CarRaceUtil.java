@@ -1,7 +1,7 @@
-package racingcar.util;
+package racingcar.v1.util;
 
 import camp.nextstep.edu.missionutils.Randoms;
-import racingcar.entity.Car;
+import racingcar.v1.entity.Car;
 
 import java.util.ArrayList;
 import java.util.List;
