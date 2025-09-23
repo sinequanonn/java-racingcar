@@ -1,10 +1,6 @@
-package racingcar.util;
+package racingcar.v1.util;
 
-import racingcar.entity.Car;
-
-import java.util.List;
-
-import static racingcar.constant.MessageConstant.*;
+import static racingcar.v1.constant.MessageConstant.*;
 
 public class MessageUtil {
 

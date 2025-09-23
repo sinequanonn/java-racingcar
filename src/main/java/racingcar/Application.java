@@ -1,13 +1,6 @@
 package racingcar;
 
-import camp.nextstep.edu.missionutils.Console;
-import camp.nextstep.edu.missionutils.Randoms;
-import racingcar.entity.Car;
-import racingcar.util.InputUtil;
-
-
-import java.util.ArrayList;
-import java.util.List;
+import racingcar.v1.CarRacingApplication;
 
 public class Application {
     public static void main(String[] args) {
@@ -16,6 +9,8 @@ public class Application {
         CarRacingApplication carRacingApplication = new CarRacingApplication();
 
         carRacingApplication.start();
+
+
 
     }
 }

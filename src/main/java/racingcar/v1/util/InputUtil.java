@@ -1,11 +1,11 @@
-package racingcar.util;
+package racingcar.v1.util;
 
-import racingcar.entity.Car;
+import racingcar.v1.entity.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 import camp.nextstep.edu.missionutils.Console;
-import racingcar.validation.InputValidation;
+import racingcar.v1.validation.InputValidation;
 
 public class InputUtil {
 
