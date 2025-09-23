@@ -20,4 +20,12 @@ public class InputUtil {
         }
         return cars;
     }
+
+    public int getRound() {
+        String input = Console.readLine();
+
+        int round = Integer.parseInt(input);
+        ValidateUtil.validate(round);
+        return round;
+    }
 }
