@@ -51,5 +51,29 @@ class InputUtilTest {
                 .hasMessageContaining("자동차 이름은 5글자 이하이어야 합니다.");
     }
 
+    @Test
+    void 라운드횟수_정상입력() {
+        // given
+        String input = "5\n";
+        System.setIn(new ByteArrayInputStream(input.getBytes()));
+
+        // when
+        int round = inputUtil.getRound();
+        assertThat(round).isEqualTo(5);
+    }
+
+    @Test
+    void 라운드횟수_음수입력() {
+        // given
+        String input = "-5\n";
+        System.setIn(new ByteArrayInputStream(input.getBytes()));
+
+        // when
+        assertThatThrownBy(() -> inputUtil.getRound())
+                .isInstanceOf(IllegalArgumentException.class)
+                .hasMessageContaining("양수이어야 합니다.");
+
+    }
+
 
 }
