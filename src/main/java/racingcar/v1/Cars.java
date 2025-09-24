@@ -10,6 +10,8 @@ public class Cars {
 
     public void playRace() {
         createCars();
+        Round round = new Round();
+        round.roundPlay(cars);
     }
 
     private void createCars() {
@@ -23,7 +25,7 @@ public class Cars {
 
     private List<String> getCarNames(String input) {
         List<String> carNames = new ArrayList<>();
-        String[] splitInput = input.split(",");
+        String[] splitInput = input.split(", ");
 
         for (String name : splitInput) {
             carNames.add(name);
