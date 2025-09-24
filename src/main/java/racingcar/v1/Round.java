@@ -17,6 +17,9 @@ public class Round {
             playOneGame(cars);
             ViewRound.printOneRoundResult(cars);
         }
+
+        Winner winner = new Winner();
+        winner.isWinner(cars);
     }
 
     private void playOneGame(List<Car> cars) {

@@ -10,6 +10,7 @@ public class Cars {
 
     public void playRace() {
         createCars();
+
         Round round = new Round();
         round.roundPlay(cars);
     }

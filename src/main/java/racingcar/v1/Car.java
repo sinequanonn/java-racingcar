@@ -33,4 +33,12 @@ public class Car {
     public String getName() {
         return name;
     }
+
+    public boolean isMaxMove(int move) {
+        return this.move == move;
+    }
+
+    public int getMove() {
+        return move;
+    }
 }
