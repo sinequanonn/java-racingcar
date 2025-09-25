@@ -1,14 +1,14 @@
 package racingcar.v1;
 
 public class Race {
-    private Cars cars;
+    private final Vehicles vehicles;
 
     public Race() {
-        this.cars = new Cars();
+        this.vehicles = new Cars();
     }
 
     public void playRace() {
-        cars.makeCarsReady();
-        cars.enterRace();
+        vehicles.makeVehiclesReady();
+        vehicles.enterRace();
     }
 }
