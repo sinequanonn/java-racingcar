@@ -7,18 +7,21 @@ import java.util.List;
 public class Rounds {
 
     private int round;
+    private ViewRound viewRound;
+    private Winner winner;
 
     public Rounds() {
         this.round = createRound();
+        this.viewRound = new ViewRound();
+        this.winner = new Winner();
     }
 
     public void roundAllPlay(List<Car> cars) {
         for (int i = 0; i < this.round; i++) {
             playOneGame(cars);
-            ViewRound.printOneRoundResult(cars);
+            viewRound.printOneRoundResult(cars);
         }
 
-        Winner winner = new Winner();
         winner.isWinner(cars);
     }
 
