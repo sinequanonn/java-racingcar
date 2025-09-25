@@ -2,7 +2,7 @@ package racingcar.v1;
 
 import camp.nextstep.edu.missionutils.Randoms;
 
-public class Car {
+public class Car implements Vehicle {
     private String name;
     private int move;
 
@@ -12,6 +12,7 @@ public class Car {
         this.move = 0;
     }
 
+    @Override
     public void playRandomMove() {
         int random = Randoms.pickNumberInRange(0, 9);
 
@@ -20,12 +21,8 @@ public class Car {
         }
     }
 
-    public void printRound() {
-        System.out.println(this.name + " : " + "-".repeat(move));
-    }
-
     private void validate(String name) {
-        if (name.length() >= 5) {
+        if (name.length() > 5) {
             throw new IllegalArgumentException();
         }
     }
