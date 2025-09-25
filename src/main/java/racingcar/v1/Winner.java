@@ -7,7 +7,7 @@ public class Winner {
 
     List<String> winners = new ArrayList<>();
 
-    void isWinner(List<Car> cars) {
+    public void findWinner(List<Car> cars) {
         int maxMove = cars.stream()
                 .mapToInt(Car::getMove)
                 .max()
@@ -21,7 +21,7 @@ public class Winner {
         printWinner();
     }
 
-    void printWinner() {
+    private void printWinner() {
         System.out.println(String.join(", ", winners));
     }
 
