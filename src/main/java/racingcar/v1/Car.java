@@ -3,7 +3,7 @@ package racingcar.v1;
 import camp.nextstep.edu.missionutils.Randoms;
 
 public class Car implements Vehicle {
-    private String name;
+    private final String name;
     private int move;
 
     public Car(String name) {
