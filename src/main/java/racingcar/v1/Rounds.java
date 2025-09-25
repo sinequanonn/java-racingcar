@@ -22,7 +22,7 @@ public class Rounds {
             viewRound.printOneRoundResult(cars);
         }
 
-        winner.isWinner(cars);
+        winner.findWinner(cars);
     }
 
     private void playOneGame(List<Car> cars) {
