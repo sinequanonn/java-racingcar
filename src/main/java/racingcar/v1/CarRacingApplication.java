@@ -2,14 +2,14 @@ package racingcar.v1;
 
 public class CarRacingApplication {
 
-    private Cars cars;
+    private Race race ;
 
-    public CarRacingApplication(Cars cars) {
-        this.cars = cars;
+    public CarRacingApplication() {
+        this.race = new Race();
     }
 
     public void start() {
-        cars.playRace();
+        race.playRace();
     }
 
 }

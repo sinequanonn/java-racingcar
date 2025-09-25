@@ -8,20 +8,18 @@ import java.util.List;
 public class Cars {
     private List<Car> cars = new ArrayList<>();
 
-    public void playRace() {
-        createCars();
-
-        Round round = new Round();
-        round.roundPlay(cars);
-    }
-
-    private void createCars() {
+    public void makeCarsReady() {
         System.out.println("경주할 자동차 이름을 입력하세요.(이름은 쉽표(,) 기준으로 구분)");
         String carInput = Console.readLine();
         List<String> carNames = getCarNames(carInput);
         for (String carName : carNames) {
             cars.add(new Car(carName));
         }
+    }
+
+    public void enterRace() {
+        Rounds round = new Rounds();
+        round.roundAllPlay(cars);
     }
 
     private List<String> getCarNames(String input) {
@@ -34,5 +32,7 @@ public class Cars {
         return carNames;
     }
 
-
+    public List<Car> getCars() {
+        return cars;
+    }
 }

@@ -10,7 +10,6 @@ import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.junit.jupiter.api.Assertions.*;
 
 class CarsTest {
 
@@ -29,7 +28,7 @@ class CarsTest {
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
         List<Car> cars1 = cars.getCars();
-        cars.playRace();
+        cars.makeCarsReady();
         assertThat(cars1.get(0).getName()).isEqualTo("pobi");
         assertThat(cars1.get(1).getName()).isEqualTo("jun");
         assertThat(cars1.get(2).getName()).isEqualTo("won");
@@ -41,7 +40,7 @@ class CarsTest {
         System.setIn(new ByteArrayInputStream(input.getBytes()));
 
         List<Car> cars1 = cars.getCars();
-        assertThatThrownBy(() -> cars.playRace())
+        assertThatThrownBy(() -> cars.makeCarsReady())
                 .isInstanceOf(IllegalArgumentException.class);
     }
 
